@@ -32,7 +32,6 @@
                 font-size: 4vw;
                 font-weight: bold;
                 color: #fff;
-                letter-spacing: 3px;
                 z-index: 2;
                 overflow: hidden;
 
@@ -42,22 +41,20 @@
 
 
                 background: repeating-linear-gradient(
-                    -45deg,
+                    45deg,
                     #ffbe52,
-                    #ffbe52 60px,
-                    #ffd59a 60px,
-                    #ffd59a 120px
+                    #ffbe52 5vw,
+                    #ffd59a 5vw,
+                    #ffd59a 10vw
                 );
-                animation: moveStripes 6s linear infinite;
+                background-size: 200% 200%;
+                animation: barberpole 30s linear infinite;
             }
 
-            @keyframes moveStripes {
-                from {
-                    background-position: 0 0;
-                }
-                to {
-                    background-position: 170px 0;
-                }
+            @keyframes barberpole {
+              100% {
+                background-position: 100% 100%;
+              }
             }
 
             .construction-tape .text {
